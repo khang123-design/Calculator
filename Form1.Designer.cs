@@ -31,8 +31,10 @@
             lbl_31_Khang = new Label();
             lblSoA_31_Khang = new Label();
             lblSoB = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtSoA = new TextBox();
+            txtSoB = new TextBox();
+            btnCong = new Button();
+            lblKQ = new Label();
             SuspendLayout();
             // 
             // lbl_31_Khang
@@ -68,29 +70,50 @@
             lblSoB.Text = "Số B:";
             lblSoB.Click += lblSoA_31_Khang_Click;
             // 
-            // textBox1
+            // txtSoA
             // 
-            textBox1.Location = new Point(250, 135);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(175, 27);
-            textBox1.TabIndex = 2;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtSoA.Location = new Point(250, 135);
+            txtSoA.Name = "txtSoA";
+            txtSoA.Size = new Size(175, 27);
+            txtSoA.TabIndex = 2;
+            txtSoA.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // txtSoB
             // 
-            textBox2.Location = new Point(250, 195);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(175, 27);
-            textBox2.TabIndex = 2;
-            textBox2.TextChanged += textBox1_TextChanged;
+            txtSoB.Location = new Point(250, 195);
+            txtSoB.Name = "txtSoB";
+            txtSoB.Size = new Size(175, 27);
+            txtSoB.TabIndex = 2;
+            txtSoB.TextChanged += textBox1_TextChanged;
+            // 
+            // btnCong
+            // 
+            btnCong.Location = new Point(577, 181);
+            btnCong.Name = "btnCong";
+            btnCong.Size = new Size(94, 29);
+            btnCong.TabIndex = 3;
+            btnCong.Text = "+";
+            btnCong.UseVisualStyleBackColor = true;
+            btnCong.Click += btnCong_Click;
+            // 
+            // lblKQ
+            // 
+            lblKQ.AutoSize = true;
+            lblKQ.Location = new Point(304, 293);
+            lblKQ.Name = "lblKQ";
+            lblKQ.Size = new Size(63, 20);
+            lblKQ.TabIndex = 4;
+            lblKQ.Text = "Kết quả:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(lblKQ);
+            Controls.Add(btnCong);
+            Controls.Add(txtSoB);
+            Controls.Add(txtSoA);
             Controls.Add(lblSoB);
             Controls.Add(lblSoA_31_Khang);
             Controls.Add(lbl_31_Khang);
@@ -105,7 +128,9 @@
         private Label lbl_31_Khang;
         private Label lblSoA_31_Khang;
         private Label lblSoB;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtSoA;
+        private TextBox txtSoB;
+        private Button btnCong;
+        private Label lblKQ;
     }
 }
